@@ -1,0 +1,38 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	include pug/header
+	.content
+		.container
+			.text-content
+				h1 Заголовок 1
+				h2 Заголовок 2
+				h3 Заголовок 3
+				h4 Заголовок 4
+				h5 Заголовок 5
+				h6 Заголовок 6
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis accusamus quia culpa quae, alias aperiam sequi soluta doloribus consectetur error ducimus in facere eos veritatis, consequuntur iure quisquam sapiente illo officia distinctio tempora, quasi dignissimos. Reiciendis facilis, alias sit! Aut facere, at fugit placeat veritatis sapiente enim. Sequi, eligendi, incidunt!
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nihil laboriosam, consequuntur, ab inventore error possimus nesciunt deserunt. Voluptatum tenetur nostrum blanditiis eaque laudantium. Laborum facere dolorum nostrum fugiat eveniet nisi ipsa enim cumque distinctio! Aut accusamus vel odio porro quae, at pariatur quia nihil a quam, sequi doloremque, excepturi.
+				blockquote  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum, quas deleniti! Quia culpa magni error quidem, eaque sint deserunt architecto. Quidem nemo asperiores voluptatibus culpa autem reprehenderit at, architecto est repudiandae, repellendus explicabo. Distinctio quisquam ducimus placeat, sed hic aliquam neque at officiis cum voluptatem nisi cumque, incidunt aut.
+				table
+					thead
+						tr
+							td Заголовок
+							td Заголовок
+							td Заголовок
+							td Заголовок
+					tbody
+						tr
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+						tr
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+							td  Lorem ipsum dolor sit amet.
+	include pug/footer

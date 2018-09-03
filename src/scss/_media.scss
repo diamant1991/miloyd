@@ -7,6 +7,9 @@
 	.hidden-lg{
 		display: none;
 	}
+	.card-description{
+		margin-top: 40px;
+	}
 	.sidebar{
 		display: none;
 	}
@@ -112,12 +115,25 @@
 	.sorting-title{
 		display: block;
 	}
+
 	.sorting-btn{
 		margin: 0;
 
 		+ .sorting-btn{
 			margin-left: 10px;
 		}
+	}
+	.card-price__prev b{
+		font-size: 30px;
+	}
+	.card-img{
+		width: 100%;
+	}
+	.card-price__prev{
+		font-size: 18px;
+	}
+	.card-price__next{
+		font-size: 16px;
 	}
 	.main-slider__img{
 		height: 320px;
@@ -126,9 +142,18 @@
 		margin: 0 6px;
 		font-size: 12px;
 	}
+	.card-slider__item{
+		height: 300px;
+		padding-top: 0;
+
+		img{
+			max-height: 200px;
+		}
+	}
 	.tab-btn{
 		font-size: 16px;
-		margin: 0 15px;
+		margin: 0 20px;
+		display: inline-block;
 	}
 	.item-title{
 		font-size: 24px;
@@ -139,6 +164,13 @@
 	.news-title{
 		font-size: 16px;
 	}
+	.p-size--card{
+		width: 100%;
+	}
+	.color-block{
+		width: 100%;
+		margin-bottom: 15px;
+	}
 	h3{
 		font-size: 22px;
 	}
@@ -146,6 +178,26 @@
 		width: 100%;
 		margin-bottom: 25px;
 	}
+	.card-tab__item{
+		width: 100%;
+		text-align: center;
+
+		&.active{
+			border: 2px solid #f2f3f5 !important;
+
+			&:after{
+				content: none;
+			}
+		}
+	}
+	.card-btn .btn{
+		width: 100%;
+
+		+ .btn{
+			margin-top: 20px;
+		}
+	}
+
 }
 
 @media(min-width: 576px){
@@ -159,6 +211,9 @@
 	}
 	.hidden-xs{
 		display: none;
+	}
+	.card-price__next{
+		margin-left: 15px;
 	}
 	.top-btn{
 		padding-left: 5px;

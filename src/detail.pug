@@ -20,15 +20,24 @@ block content
 						span.middle.breadcrumb-delimiter / 
 					li
 						a(href="#") Туфли
-				.back-link.hidden-xs
+				.back-link.hidden-sm
 					a(href="#") 
 						span.middle.back-link__icon
 							img(src="images/back.svg", alt="")
 						span.middle Вернуться назад
 			.card.row
+				.visible-lg.col-xl-12
+					h1.item-title Босоножки со шнуровкой
+					.articul Артикул: 4521765XL
+					.card-price
+						.card-price__prev.bottom
+							b 15 000 
+							span руб
+						.card-price__next.bottom
+							| 17 450 руб.
 				.col-xl-7
 					.row.no-gutters.justify-content-between
-						.card-left
+						.card-left.hidden-sm
 							.card-thumb
 								div
 									.card-thumb__item.row.no-gutters.align-items-center
@@ -103,10 +112,10 @@ block content
 									img(src="images/twitter.svg", alt="")
 								a(href="#").card-social__item.middle
 									img(src="images/ok.svg", alt="")
-				.col-xl-5
-					h1.item-title Босоножки со шнуровкой
-					.articul Артикул: 4521765XL
-					.card-price
+				.col-xl-5.card-description
+					h1.item-title.hidden-lg Босоножки со шнуровкой
+					.articul.hidden-lg Артикул: 4521765XL
+					.card-price.hidden-lg
 						.card-price__prev.bottom
 							b 15 000 
 							span руб
@@ -132,12 +141,12 @@ block content
 					a(href="#").btn.btn-full.btn-grey Забрать в магазине
 			.card-info
 				.card-tab
-					a(href="#").card-tab__item.active Описание
-					a(href="#").card-tab__item Наличие в магазинах
-					a(href="#").card-tab__item Доставка и примерка
-					a(href="#").card-tab__item Способы и оплаты
+					a(href="#" data-info="#descr").card-tab__item.active Описание
+					a(href="#" data-info="#status").card-tab__item Наличие в магазинах
+					a(href="#" data-info="#delivery").card-tab__item Доставка и примерка
+					a(href="#" data-info="#payment").card-tab__item Способы и оплаты
 				.card-info__content
-					.card-info__item
+					#descr.card-info__item.active
 						.row
 							.col-md-6
 								p Massimo Santini – это итальянская марка для активных и стильных людей, которые ценят комфорт и функциональность во всем. Компания была основана в 1989 году Massimo Santini и носит его имя по сей день.
@@ -145,17 +154,85 @@ block content
 							.col-md-6
 								p Massimo Santini – это итальянская марка для активных и стильных людей, которые ценят комфорт и функциональность во всем. Компания была основана в 1989 году Massimo Santini и носит его имя по сей день.
 								p В 2016 году, благодаря объединенным усилиям лучших специалистов Rendez-Vous и Santini, появилась коллекция-коллаборация Rendez-Vous by Massimo Santini. 
+					#status.card-info__item
+						form
+							.form-group
+								input(type="text" placeholder="Поиск по названию магазина или улицы").form-control.form-control--popup.form-control--tab
+							.form-group
+								.p-size
+									a(href="#").p-size__item.active.middle 36
+									a(href="#").p-size__item.middle 37
+									a(href="#").p-size__item.middle 38
+							.form-group
+								.checkbox-block
+									input(type="checkbox")#check2.checkbox.checkbox--small
+									label(for="check2") Сейчас в наличие в магазине
+							.form-group
+								button(type="submit").btn.btn-black Поиск
+						.list
+							h4 Список магазинов
+							.row
+								.col-md-6
+									.list-item
+										h6 Miloyd – Авиапарк
+										p Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74
+										.list-status Размеры в наличии:
+										.p-size
+											a(href="#").p-size__item.active.middle 36
+											a(href="#").p-size__item.middle 37
+											a(href="#").p-size__item.middle 38
+										a(href="#").list-link Забрать в магазине
+								.col-md-6
+									.list-item
+										h6 Miloyd – Авиапарк
+										p Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74
+										.list-status Размеры в наличии:
+										.p-size
+											a(href="#").p-size__item.active.middle 36
+											a(href="#").p-size__item.middle 37
+											a(href="#").p-size__item.middle 38
+										a(href="#").list-link Забрать в магазине
+								.col-md-6
+									.list-item
+										h6 Miloyd – Авиапарк
+										p Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74
+										.list-status Размеры в наличии:
+										.p-size
+											a(href="#").p-size__item.active.middle 36
+											a(href="#").p-size__item.middle 37
+											a(href="#").p-size__item.middle 38
+										a(href="#").list-link Забрать в магазине
+								.col-md-6
+									.list-item
+										h6 Miloyd – Авиапарк
+										p Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74
+										.list-status Размеры в наличии:
+										.p-size
+											a(href="#").p-size__item.active.middle 36
+											a(href="#").p-size__item.middle 37
+											a(href="#").p-size__item.middle 38
+										a(href="#").list-link Забрать в магазине
+					#delivery.card-info__item
+					#payment.card-info__item
 			.products
 				.container
 					.tab
-						a(href="#").tab-btn.active С этим товаром покупают
-						a(href="#").tab-btn Вам могут понравиться
-					.product-carousel
-						include pug/product
-						include pug/product
-						include pug/product
-						include pug/product
-						include pug/product
+						a(href="#" data-target="#tab1").tab-btn.tab-btn--detail.active С этим товаром покупают
+						a(href="#" data-target="#tab2").tab-btn.tab-btn--detail Вам могут понравиться
+					.tab-pane#tab1.active
+						.product-carousel
+							include pug/product
+							include pug/product
+							include pug/product
+							include pug/product
+							include pug/product
+					.tab-pane#tab2
+						.product-carousel
+							include pug/product
+							include pug/product
+							include pug/product
+							include pug/product
+							include pug/product
 	.text-block.hidden-sm
 		.container
 			h4 Интернет-магазин обуви MILOYD

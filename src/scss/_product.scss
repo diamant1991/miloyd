@@ -9,6 +9,13 @@
 	font-size: 18px;
 	color: #383a47;
 	margin: 0 25px;
+	border-bottom: 2px solid transparent;
+
+	&--detail{
+		+ .tab-btn--detail{
+			margin-top: 10px;
+		}
+	}
 
 	&.active,
 	&:hover{
@@ -153,5 +160,14 @@
 		margin-right: 10px;
 		position: relative;
 		top: 2px;
+	}
+}
+.tab-pane{
+	opacity: 0;
+	height: 0;
+
+	&.active{
+		opacity: 1;
+		height: auto;
 	}
 }

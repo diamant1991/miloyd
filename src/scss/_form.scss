@@ -127,6 +127,28 @@ textarea.form-control{
   z-index: 2;
   background: url(../images/check.svg)no-repeat;
 }
+.checkbox--small{
+	+ label{
+		padding-left: 40px;
+
+		&:before{
+			top: 3px;
+			width: 24px;
+			height: 24px;
+			border: solid 2px #383a47;
+		}
+	}
+}
+.form-control--tab{
+	max-width: 400px;
+}
+.checkbox--small:checked + label:after{
+	background: url(../images/check-small.svg)no-repeat;
+  width: 20px;
+  background-size: contain;
+  left: 3px;
+  top: 4px;
+}
 .footer-title{
 	font-size: 14px;
 	font-weight: bold;

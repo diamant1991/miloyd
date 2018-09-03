@@ -169,12 +169,20 @@
 						<li><a href="#">Обувь</a><span class="middle breadcrumb-delimiter">/ </span></li>
 						<li><a href="#">Туфли</a></li>
 					</ul>
-					<div class="back-link hidden-xs"><a href="#"> <span class="middle back-link__icon"><img src="images/back.svg" alt=""></span><span class="middle">Вернуться назад</span></a></div>
+					<div class="back-link hidden-sm"><a href="#"> <span class="middle back-link__icon"><img src="images/back.svg" alt=""></span><span class="middle">Вернуться назад</span></a></div>
 				</div>
 				<div class="card row">
+					<div class="visible-lg col-xl-12">
+						<h1 class="item-title">Босоножки со шнуровкой</h1>
+						<div class="articul">Артикул: 4521765XL</div>
+						<div class="card-price">
+							<div class="card-price__prev bottom"><b>15 000 </b><span>руб</span></div>
+							<div class="card-price__next bottom">17 450 руб.</div>
+						</div>
+					</div>
 					<div class="col-xl-7">
 						<div class="row no-gutters justify-content-between">
-							<div class="card-left">
+							<div class="card-left hidden-sm">
 								<div class="card-thumb">
 									<div>
 										<div class="card-thumb__item row no-gutters align-items-center">
@@ -262,10 +270,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-5">
-						<h1 class="item-title">Босоножки со шнуровкой</h1>
-						<div class="articul">Артикул: 4521765XL</div>
-						<div class="card-price">
+					<div class="col-xl-5 card-description">
+						<h1 class="item-title hidden-lg">Босоножки со шнуровкой</h1>
+						<div class="articul hidden-lg">Артикул: 4521765XL</div>
+						<div class="card-price hidden-lg">
 							<div class="card-price__prev bottom"><b>15 000 </b><span>руб</span></div>
 							<div class="card-price__next bottom">17 450 руб.</div>
 						</div>
@@ -286,9 +294,9 @@
 					</div>
 				</div>
 				<div class="card-info">
-					<div class="card-tab"><a class="card-tab__item active" href="#">Описание</a><a class="card-tab__item" href="#">Наличие в магазинах</a><a class="card-tab__item" href="#">Доставка и примерка</a><a class="card-tab__item" href="#">Способы и оплаты</a></div>
+					<div class="card-tab"><a class="card-tab__item active" href="#" data-info="#descr">Описание</a><a class="card-tab__item" href="#" data-info="#status">Наличие в магазинах</a><a class="card-tab__item" href="#" data-info="#delivery">Доставка и примерка</a><a class="card-tab__item" href="#" data-info="#payment">Способы и оплаты</a></div>
 					<div class="card-info__content">
-						<div class="card-info__item">
+						<div class="card-info__item active" id="descr">
 							<div class="row">
 								<div class="col-md-6">
 									<p>Massimo Santini – это итальянская марка для активных и стильных людей, которые ценят комфорт и функциональность во всем. Компания была основана в 1989 году Massimo Santini и носит его имя по сей день.</p>
@@ -300,105 +308,264 @@
 								</div>
 							</div>
 						</div>
+						<div class="card-info__item" id="status">
+							<form>
+								<div class="form-group">
+									<input class="form-control form-control--popup form-control--tab" type="text" placeholder="Поиск по названию магазина или улицы">
+								</div>
+								<div class="form-group">
+									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+								</div>
+								<div class="form-group">
+									<div class="checkbox-block">
+										<input class="checkbox checkbox--small" type="checkbox" id="check2">
+										<label for="check2">Сейчас в наличие в магазине</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<button class="btn btn-black" type="submit">Поиск</button>
+								</div>
+							</form>
+							<div class="list">
+								<h4>Список магазинов</h4>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="list-item">
+											<h6>Miloyd – Авиапарк</h6>
+											<p>Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74</p>
+											<div class="list-status">Размеры в наличии:</div>
+											<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div><a class="list-link" href="#">Забрать в магазине</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="list-item">
+											<h6>Miloyd – Авиапарк</h6>
+											<p>Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74</p>
+											<div class="list-status">Размеры в наличии:</div>
+											<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div><a class="list-link" href="#">Забрать в магазине</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="list-item">
+											<h6>Miloyd – Авиапарк</h6>
+											<p>Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74</p>
+											<div class="list-status">Размеры в наличии:</div>
+											<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div><a class="list-link" href="#">Забрать в магазине</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="list-item">
+											<h6>Miloyd – Авиапарк</h6>
+											<p>Москва, м. ЦСКА, ул. Ходынский Бульвар д.4 +7 (495) 933-69-74</p>
+											<div class="list-status">Размеры в наличии:</div>
+											<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div><a class="list-link" href="#">Забрать в магазине</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-info__item" id="delivery"></div>
+						<div class="card-info__item" id="payment"></div>
 					</div>
 				</div>
 				<div class="products">
 					<div class="container">
-						<div class="tab"><a class="tab-btn active" href="#">С этим товаром покупают</a><a class="tab-btn" href="#">Вам могут понравиться</a></div>
-						<div class="product-carousel">
-							<div class="product-item">
-								<div class="p-img row no-gutters align-items-end">
-									<div><img src="http://via.placeholder.com/270x150" alt=""></div>
-									<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
-									<div class="p-label">
-										<div class="p-label__new">new</div>
-										<div class="p-label__hit">hit</div>
+						<div class="tab"><a class="tab-btn tab-btn--detail active" href="#" data-target="#tab1">С этим товаром покупают</a><a class="tab-btn tab-btn--detail" href="#" data-target="#tab2">Вам могут понравиться</a></div>
+						<div class="tab-pane active" id="tab1">
+							<div class="product-carousel">
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
 									</div>
 								</div>
-								<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
-								<div class="p-price">
-									<div class="p-price__today middle">3 400 руб.</div>
-									<div class="p-price__prev middle">3 600 руб.</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+									</div>
 								</div>
-								<div class="product-hidden">
-									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
-									<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+									</div>
 								</div>
 							</div>
-							<div class="product-item">
-								<div class="p-img row no-gutters align-items-end">
-									<div><img src="http://via.placeholder.com/270x150" alt=""></div>
-									<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
-									<div class="p-label">
-										<div class="p-label__new">new</div>
-										<div class="p-label__hit">hit</div>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<div class="product-carousel">
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
 									</div>
 								</div>
-								<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
-								<div class="p-price">
-									<div class="p-price__today middle">3 400 руб.</div>
-									<div class="p-price__prev middle">3 600 руб.</div>
-								</div>
-								<div class="product-hidden">
-									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
-									<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
-								</div>
-							</div>
-							<div class="product-item">
-								<div class="p-img row no-gutters align-items-end">
-									<div><img src="http://via.placeholder.com/270x150" alt=""></div>
-									<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
-									<div class="p-label">
-										<div class="p-label__new">new</div>
-										<div class="p-label__hit">hit</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
 									</div>
 								</div>
-								<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
-								<div class="p-price">
-									<div class="p-price__today middle">3 400 руб.</div>
-									<div class="p-price__prev middle">3 600 руб.</div>
-								</div>
-								<div class="product-hidden">
-									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
-									<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
-								</div>
-							</div>
-							<div class="product-item">
-								<div class="p-img row no-gutters align-items-end">
-									<div><img src="http://via.placeholder.com/270x150" alt=""></div>
-									<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
-									<div class="p-label">
-										<div class="p-label__new">new</div>
-										<div class="p-label__hit">hit</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
 									</div>
 								</div>
-								<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
-								<div class="p-price">
-									<div class="p-price__today middle">3 400 руб.</div>
-									<div class="p-price__prev middle">3 600 руб.</div>
-								</div>
-								<div class="product-hidden">
-									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
-									<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
-								</div>
-							</div>
-							<div class="product-item">
-								<div class="p-img row no-gutters align-items-end">
-									<div><img src="http://via.placeholder.com/270x150" alt=""></div>
-									<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
-									<div class="p-label">
-										<div class="p-label__new">new</div>
-										<div class="p-label__hit">hit</div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
 									</div>
 								</div>
-								<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
-								<div class="p-price">
-									<div class="p-price__today middle">3 400 руб.</div>
-									<div class="p-price__prev middle">3 600 руб.</div>
-								</div>
-								<div class="product-hidden">
-									<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
-									<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+								<div class="product-item">
+									<div class="p-img row no-gutters align-items-end">
+										<div><img src="http://via.placeholder.com/270x150" alt=""></div>
+										<div class="p-like"><img src="images/love-grey.svg" alt=""></div>
+										<div class="p-label">
+											<div class="p-label__new">new</div>
+											<div class="p-label__hit">hit</div>
+										</div>
+									</div>
+									<div class="p-name">Босоножки на полиуретановой платформе, J.B.Martin</div>
+									<div class="p-price">
+										<div class="p-price__today middle">3 400 руб.</div>
+										<div class="p-price__prev middle">3 600 руб.</div>
+									</div>
+									<div class="product-hidden">
+										<div class="p-size"><a class="p-size__item active middle" href="#">36</a><a class="p-size__item middle" href="#">37</a><a class="p-size__item middle" href="#">38</a></div>
+										<div class="p-btn"><a href="#"><span class="middle p-btn__icon"><img src="images/cart.svg" alt=""></span><span class="middle">В корзину</span></a></div>
+									</div>
 								</div>
 							</div>
 						</div>

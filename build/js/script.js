@@ -105,3 +105,21 @@ $('.menu-close').click(function(e) {
   var menu = $('#mobile-menu')
   menu.hide()
 });
+
+$('.card-tab__item').click(function(e) {
+  e.preventDefault()
+  var data = $(this).attr('data-info');
+  $('.card-info__item').removeClass('active')
+  $('' + data).addClass('active')
+  $('.card-tab__item').removeClass('active')
+  $(this).addClass('active')
+});
+
+$('.tab-btn').click(function(e) {
+  e.preventDefault()
+  var data = $(this).attr('data-target');
+  $('.tab-pane').removeClass('active')
+  $('' + data).addClass('active')
+  $('.tab-btn').removeClass('active')
+  $(this).addClass('active')
+});

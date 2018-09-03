@@ -119,6 +119,14 @@
 	padding-bottom: 30px;
 	border-bottom: solid 2px #f2f3f5;
 
+	&__item{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+
 	&__content{
 		padding: 25px 0;
 		line-height: 1.71;
@@ -140,6 +148,8 @@
 		position: relative;
 		color: #2b2d42;
 		font-size: 14px;
+		border: 2px solid transparent;
+		border-bottom: 0;
 
 		&.active{
 			border: 2px solid #f2f3f5;
@@ -157,4 +167,37 @@
 			}
 		}
 	}
+}
+
+.list{
+	margin-top: 45px;
+
+	h4{
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 25px;
+	}
+	h6{
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	p{
+		margin-bottom: 15px;
+	}
+}
+.list-link{
+	color: $red;
+	border-bottom: 1px solid;
+}
+.list-status{
+	color: #abacba;
+	margin-bottom: 8px;
+}
+.p-size{
+	margin-bottom: 15px;
+}
+.list-item{
+	padding: 20px 0;
+	border-bottom: solid 1px #f2f3f5;
 }

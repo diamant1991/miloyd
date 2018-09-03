@@ -13,15 +13,30 @@ block content
 	.products
 		.container
 			.tab
-				a(href="#").tab-btn.active Хиты
-				a(href="#").tab-btn Распродажа
-				a(href="#").tab-btn Новинки
-			.product-carousel
-				include pug/product
-				include pug/product
-				include pug/product
-				include pug/product
-				include pug/product
+				a(href="#" data-target="#tab1").tab-btn.active Хиты
+				a(href="#" data-target="#tab2").tab-btn Распродажа
+				a(href="#" data-target="#tab3").tab-btn Новинки
+			.tab-pane#tab1.active
+				.product-carousel
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
+			.tab-pane#tab2
+				.product-carousel
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
+			.tab-pane#tab3
+				.product-carousel
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
+					include pug/product
 	.sale
 		.container
 			.sale-content
