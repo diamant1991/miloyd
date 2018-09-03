@@ -1,0 +1,164 @@
+.form-control{
+	display: block;
+	width: 100%;
+	background: #fff;
+	outline: 0;
+	border: 0;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+	font-family: $mont;
+
+	&--popup{
+		height: 40px;
+	  background-color: #ffffff;
+	  border: solid 2px #f2f3f5;
+	}
+
+	&--subscribe{
+		width: 395px;
+	}
+}
+.form-group{
+	+ .form-group{
+		margin-top: 30px;
+	}
+}
+.form-label{
+	font-size: 16px;
+	color: #abacba;
+	margin-bottom: 15px;
+}
+.form-group--submit{
+	text-align: center;
+}
+textarea.form-control{
+	height: 120px;
+	resize: none;
+	padding-top: 10px;
+}
+.btn{
+	font-family: $mont;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	height: 40px;
+	line-height: 36px;
+	width: 180px;
+	text-align: center;
+	outline: 0;
+	cursor: pointer;
+	background: #fff;
+}
+.btn-red{
+	border: solid 2px #d90429;
+	color: #d90429;
+	background: transparent;
+
+	&:hover{
+		background: #d90429;
+		color: #fff;
+	}
+}
+.btn-full{
+	width: 100%;
+}
+.btn-black{
+	width: 153px;
+  border: solid 2px #383a47;
+  color: #383a47;
+  background: transparent;
+
+  &:hover{
+		background: #383a47;
+		color: #fff;
+	}
+}
+.btn-grey{
+	border: solid 2px #f2f3f5;
+	font-size: 14px;
+	color: #2b2d42;
+
+	&:hover{
+		background: #f2f3f5;
+	}
+}
+.subscribe-form{
+	width: 800px;
+	margin: auto;
+}
+.checkbox-block{
+	margin-top: 35px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 50px;
+  padding-top: 7px;
+  cursor: pointer;
+  font-family: $mont;
+  font-size: 14px;
+  color: #383a47;
+}
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+}
+.checkbox:checked + label:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  z-index: 2;
+  background: url(../images/check.svg)no-repeat;
+}
+.footer-title{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-menu{
+	font-size: 14px;
+
+	li{
+		line-height: 1.43;
+		
+		+ li{
+			margin-top: 10px;
+		}
+	}
+	a{
+		color: #fff;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.footer-menu--inline{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 180px;
+
+	+ .footer-menu--inline{
+		margin-left: 75px;
+	}
+}
+.btn-submit{
+	width: 200px;
+}

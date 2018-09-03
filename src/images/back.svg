@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>3BC887EC-0763-4D11-8FDC-911AB7F22606</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M25.8745314,14.1375242 L6.8085884,14.1375242 L12.0431693,8.903829 C12.4788266,8.46826022 12.4788266,7.76217844 12.0431693,7.32660967 C11.6074227,6.89113011 10.9011974,6.89113011 10.4656293,7.32660967 L3.32680993,14.4641561 C2.89106336,14.8997249 2.89106336,15.6058067 3.32680993,16.0413755 L10.4658077,23.1789219 C10.6834579,23.3965279 10.9691071,23.5055539 11.2545778,23.5055539 C11.5400484,23.5055539 11.8254299,23.3965279 12.0433478,23.1789219 C12.4790051,22.7433532 12.4790051,22.0372714 12.0433478,21.6017026 L6.8085884,16.3680074 L25.8745314,16.3680074 C26.4905376,16.3680074 26.9899998,15.8685576 26.9899998,15.2527658 C26.9899998,14.6368848 26.4905376,14.1375242 25.8745314,14.1375242 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/back">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="color/main" mask="url(#mask-2)" fill="#383A47">
+                <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

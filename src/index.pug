@@ -1,0 +1,76 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	include pug/header
+	.main-slider
+		div
+			.main-slider__img(style="background-image: url(http://via.placeholder.com/1900x500)")
+		div
+			.main-slider__img(style="background-image: url(http://via.placeholder.com/1900x500)")
+	.products
+		.container
+			.tab
+				a(href="#").tab-btn.active Хиты
+				a(href="#").tab-btn Распродажа
+				a(href="#").tab-btn Новинки
+			.product-carousel
+				include pug/product
+				include pug/product
+				include pug/product
+				include pug/product
+				include pug/product
+	.sale
+		.container
+			.sale-content
+				.sale-text.row.no-gutters.align-items-center
+					div
+						h2.item-title Скидки до 70%! Ликвидация сезонной коллекции!
+						.date 17.05.2018 - 20.05.2018
+				.sale-banner.hidden-sm(style="background-image: url(images/girl.png)")
+	.news
+		.container
+			.news-header.row.no-gutters.align-items-center.justify-content-between
+				div.hidden-lg &nbsp;
+				h2.item-title.item-title--mrg0 Новости и акции
+				a(href="#").news-link.hidden-lg Все новости и акции
+			.news-carousel
+				include pug/news
+				include pug/news
+				include pug/news
+				include pug/news
+				include pug/news
+	.text-block.hidden-sm
+		.container
+			h4 Интернет-магазин обуви MILOYD
+			.text-item
+				p Совершенствуя технологии производства различных видов обуви и аксессуаров, компания MILOYD ежегодно предлагает модные новинки. Они предназначены для людей, выбирающих комфорт.
+				p Официальный интернет-магазин MILOYD представляет коллекцию обуви Весна-Лето 2018. В каталоге имеются также модели прошлых сезонов. Название бренда ассоциируется с природными материалами. 
+				p Мы предлагаем купить классические ботинки из натуральной кожи и замши, туфли, кроссовки с актуальными деталями и элементами, модели для праздничных
+			a(href="#").read-more Читать далее ...
+	.subscribe
+		.container
+			h3 Подпишитесь на нашу рассылку
+			.subscribe-form
+				.row.row.no-gutters.align-items-center.justify-content-between
+					input(type="text", placeholder="Введите свой e-mail").form-control.form-control--subscribe
+					button(type="submit").btn.btn-red Для женщин 
+					button(type="submit").btn.btn-black Для мужчин
+				.checkbox-block
+					input(type="checkbox")#check.checkbox
+					label(for="check") Согласие на обработку персональных данных
+	include pug/footer
+	
+
+
+
+			
+
+
+
+
+
+
+

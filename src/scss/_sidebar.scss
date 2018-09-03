@@ -1,0 +1,48 @@
+.sidebar{
+	width: 290px;
+
+	&-content{
+		border: solid 2px #f2f3f5;
+		padding: 0 18px;
+	}
+
+	&-title{
+		font-size: 14px;
+		color: #abacba;
+		margin-bottom: 18px;
+	}
+
+	&-item{
+		font-size: 14px;
+		padding: 15px 0;
+		border-bottom: solid 2px #f2f3f5;
+
+		&:last-child{
+			border-bottom: 0;
+		}
+
+		li{
+			+ li{
+				margin-top: 10px;
+			}
+		}
+
+		a{
+			color: #383a47;
+		}
+	}
+	&-menu{
+		font-size: 14px;
+
+		a{
+			&:hover{
+				color: $red;
+			}
+		}
+
+		&__count{
+			color: #abacba;
+			margin-left: 5px;
+		}
+	}
+}

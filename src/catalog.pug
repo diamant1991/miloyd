@@ -1,0 +1,118 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	include pug/header
+	.content
+		.container
+			.breadcrumb.row.no-gutters.align-items-center.justify-content-between
+				ul.breadcrumb-menu
+					li
+						a(href="#") Главная
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Женщинам
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Обувь
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Туфли
+				.back-link.hidden-xs
+					a(href="#") 
+						span.middle.back-link__icon
+							img(src="images/back.svg", alt="")
+						span.middle Вернуться назад
+			.row.no-gutters.justify-content-between
+				.sidebar
+					.sidebar-content
+						.sidebar-item
+							ul.sidebar-menu
+								li
+									a(href="#") Весна-лето 2018
+								li
+									a(href="#") Распродажа
+								li
+									a(href="#") Большие размеры
+						.sidebar-item
+							.sidebar-title Тип
+							ul.sidebar-menu
+								li
+									a(href="#") 
+										span.middle Все 
+										span.middle.sidebar-menu__count (126)
+								li
+									a(href="#")
+										span.middle Балетки 
+										span.middle.sidebar-menu__count (30)
+								li
+									a(href="#")
+										span.middle Боссоножки 
+										span.middle.sidebar-menu__count (26)
+						img(src="images/filter.jpg", alt="")
+				.main-content
+					h1.item-title.page-title Босоножки
+					.visible-lg
+						a(href="#").filter-btn
+							span.middle.filter-btn__icon
+								img(src="images/filter.svg", alt="")
+							span.middle Фильтр
+					.sorting.row.no-gutters.align-items-center.justify-content-between
+						.sorting-left
+							.sorting-title.middle Сортировать по:
+							a(href="#").middle.sorting-btn.active популярности
+							a(href="#").middle.sorting-btn возрастанию цены
+							a(href="#").middle.sorting-btn убыванию цены
+						.sorting-right
+							.sorting-title.middle Показывать по:
+							a(href="#").middle.sorting-btn.active 18
+							a(href="#").middle.sorting-btn 36
+							a(href="#").middle.sorting-btn 72
+					.row.product-list
+						.col-lg-4.col-md-6
+							include pug/product
+						.col-lg-4.col-md-6
+							include pug/product
+						.col-lg-4.col-md-6
+							include pug/product
+						.col-lg-4.col-md-6
+							include pug/product
+						.col-lg-4.col-md-6
+							include pug/product
+						.col-lg-4.col-md-6
+							include pug/product
+					.sorting.row.no-gutters.align-items-center.justify-content-between
+						a(href="#").show-more
+							span.middle.show-more__icon
+								img(src="images/refresh.svg", alt="")
+							span.middle Показать еще
+						.pagination
+							a(href="#").pagination-btn.middle
+								img(src="images/arrow-left.svg", alt="")
+							a(href="#").pagination-btn.middle 1
+							a(href="#").pagination-btn.middle 2
+							a(href="#").pagination-btn.middle 3
+							a(href="#").pagination-btn.middle
+								img(src="images/arrow-right.svg", alt="")
+						.sorting-right
+							.sorting-title.middle Показывать по:
+							a(href="#").middle.sorting-btn.active 18
+							a(href="#").middle.sorting-btn 36
+							a(href="#").middle.sorting-btn 72
+	.text-block.hidden-sm
+		.container
+			h4 Интернет-магазин обуви MILOYD
+			.text-item
+				p Совершенствуя технологии производства различных видов обуви и аксессуаров, компания MILOYD ежегодно предлагает модные новинки. Они предназначены для людей, выбирающих комфорт.
+				p Официальный интернет-магазин MILOYD представляет коллекцию обуви Весна-Лето 2018. В каталоге имеются также модели прошлых сезонов. Название бренда ассоциируется с природными материалами. 
+				p Мы предлагаем купить классические ботинки из натуральной кожи и замши, туфли, кроссовки с актуальными деталями и элементами, модели для праздничных
+			a(href="#").read-more Читать далее ...
+	.subscribe
+		.container
+			h3 
+				| Спасибо! 
+				br 
+				| Вы успешно подписались
+	include pug/footer

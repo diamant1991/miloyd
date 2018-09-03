@@ -1,0 +1,23 @@
+.footer{
+	padding: 50px 0;
+	background-color: #383a47;
+	color: #fff;
+}
+.copyright{
+	font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+  line-height: 2;
+  color: #fff;
+}
+.footer-logo{
+	margin-bottom: 20px;
+}
+.left-block{
+	width: 165px;
+}
+.social-item{
+	+ .social-item{
+		margin-left: 16px;
+	}
+}

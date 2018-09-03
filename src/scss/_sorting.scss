@@ -1,0 +1,58 @@
+.sorting{
+	font-size: 14px;
+	margin-bottom: 35px;
+
+	&-title{
+		 color: #abacba;
+	}
+	&-btn{
+		margin: 0 10px;
+
+		&.active,
+		&:hover{
+			color: $red;
+		}
+	}
+
+	a{
+		color: #2b2d42;
+	}
+}
+.pagination-btn{
+	width: 32px;
+  height: 32px;
+  border: solid 2px #f2f3f5;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  color: #2b2d42;
+  margin: 0 8px;
+
+  &:hover{
+  	border-color: #383a47;
+  	color: #383a47;
+
+  	img{
+  		opacity: 1;
+  	}
+  }
+
+  img{
+  	vertical-align: middle;
+  	width: 15px;
+  	position: relative;
+  	top: -1px;
+  	opacity: 0.3;
+  }
+}
+.show-more{
+	font-size: 14px;
+
+	&:hover{
+		color: $red;
+	}
+
+	&__icon{
+		margin-right: 5px;
+	}
+}

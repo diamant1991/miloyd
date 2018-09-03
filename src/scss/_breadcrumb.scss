@@ -1,0 +1,36 @@
+.breadcrumb{
+	margin: 40px 0;
+
+	&-delimiter{
+		margin: 0 5px;
+	}
+	
+	&-menu{
+		font-size: 14px;
+
+		a{	
+			color: #2b2d42;
+
+			&:hover{
+				border-bottom: 1px solid;
+			}
+		}
+		li{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+.back-link{
+	font-size: 14px;
+
+	&__icon{
+		width: 20px;
+		margin-right: 5px;
+		position: relative;
+		top: 1px;
+	}
+	a{
+		color: #2b2d42;
+	}
+}

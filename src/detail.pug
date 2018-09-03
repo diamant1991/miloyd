@@ -1,0 +1,178 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	include pug/header
+	.content
+		.container
+			.breadcrumb.row.no-gutters.align-items-center.justify-content-between
+				ul.breadcrumb-menu
+					li
+						a(href="#") Главная
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Женщинам
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Обувь
+						span.middle.breadcrumb-delimiter / 
+					li
+						a(href="#") Туфли
+				.back-link.hidden-xs
+					a(href="#") 
+						span.middle.back-link__icon
+							img(src="images/back.svg", alt="")
+						span.middle Вернуться назад
+			.card.row
+				.col-xl-7
+					.row.no-gutters.justify-content-between
+						.card-left
+							.card-thumb
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+								div
+									.card-thumb__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/50x50", alt="")
+						.card-img
+							.p-like.p-like--card
+								img(src="images/love-grey.svg", alt="")
+							.p-label.p-label--card
+								.p-label__new new
+								.p-label__hit hit
+							.card-slider
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+								div
+									.card-slider__item.row.no-gutters.align-items-center
+										div
+											img(src="http://via.placeholder.com/350x250", alt="")
+							.card-social
+								.card-social__title.middle Поделиться
+								a(href="#").card-social__item.middle
+									img(src="images/fb.svg", alt="")
+								a(href="#").card-social__item.middle
+									img(src="images/vk.svg", alt="")
+								a(href="#").card-social__item.middle
+									img(src="images/twitter.svg", alt="")
+								a(href="#").card-social__item.middle
+									img(src="images/ok.svg", alt="")
+				.col-xl-5
+					h1.item-title Босоножки со шнуровкой
+					.articul Артикул: 4521765XL
+					.card-price
+						.card-price__prev.bottom
+							b 15 000 
+							span руб
+						.card-price__next.bottom
+							| 17 450 руб.
+					.card-choice
+						.card-choice__title Выберите размер
+						.row.no-gutters.align-items-center.justify-content-between
+							.p-size.p-size--card
+								a(href="#").p-size__item.active.middle 36
+								a(href="#").p-size__item.middle 37
+								a(href="#").p-size__item.middle 38
+							a(href="#").card-choice__link Таблица размеров
+					.card-choice
+						.card-choice__title Выберите цвет
+						.row.no-gutters.align-items-center.justify-content-between
+							.color-block
+								img(src="images/colors.jpg", alt="")
+							.status В наличие 2 пары
+					.card-btn.row.no-gutters.align-items-center.justify-content-between
+						a(href="#").btn.btn-red Купить в 1 клик
+						a(href="#").btn.btn-black В корзину
+					a(href="#").btn.btn-full.btn-grey Забрать в магазине
+			.card-info
+				.card-tab
+					a(href="#").card-tab__item.active Описание
+					a(href="#").card-tab__item Наличие в магазинах
+					a(href="#").card-tab__item Доставка и примерка
+					a(href="#").card-tab__item Способы и оплаты
+				.card-info__content
+					.card-info__item
+						.row
+							.col-md-6
+								p Massimo Santini – это итальянская марка для активных и стильных людей, которые ценят комфорт и функциональность во всем. Компания была основана в 1989 году Massimo Santini и носит его имя по сей день.
+								p В 2016 году, благодаря объединенным усилиям лучших специалистов Rendez-Vous и Santini, появилась коллекция-коллаборация Rendez-Vous by Massimo Santini. 
+							.col-md-6
+								p Massimo Santini – это итальянская марка для активных и стильных людей, которые ценят комфорт и функциональность во всем. Компания была основана в 1989 году Massimo Santini и носит его имя по сей день.
+								p В 2016 году, благодаря объединенным усилиям лучших специалистов Rendez-Vous и Santini, появилась коллекция-коллаборация Rendez-Vous by Massimo Santini. 
+			.products
+				.container
+					.tab
+						a(href="#").tab-btn.active С этим товаром покупают
+						a(href="#").tab-btn Вам могут понравиться
+					.product-carousel
+						include pug/product
+						include pug/product
+						include pug/product
+						include pug/product
+						include pug/product
+	.text-block.hidden-sm
+		.container
+			h4 Интернет-магазин обуви MILOYD
+			.text-item
+				p Совершенствуя технологии производства различных видов обуви и аксессуаров, компания MILOYD ежегодно предлагает модные новинки. Они предназначены для людей, выбирающих комфорт.
+				p Официальный интернет-магазин MILOYD представляет коллекцию обуви Весна-Лето 2018. В каталоге имеются также модели прошлых сезонов. Название бренда ассоциируется с природными материалами. 
+				p Мы предлагаем купить классические ботинки из натуральной кожи и замши, туфли, кроссовки с актуальными деталями и элементами, модели для праздничных
+			a(href="#").read-more Читать далее ...
+	.subscribe
+		.container
+			h3 Подпишитесь на нашу рассылку
+			.subscribe-form
+				.row.row.no-gutters.align-items-center.justify-content-between
+					input(type="text", placeholder="Введите свой e-mail").form-control.form-control--subscribe
+					button(type="submit").btn.btn-red Для женщин 
+					button(type="submit").btn.btn-black Для мужчин
+				.checkbox-block
+					input(type="checkbox")#check.checkbox
+					label(for="check") Согласие на обработку персональных данных				
+	include pug/footer

@@ -1,0 +1,34 @@
+.news{
+	margin-bottom: 80px;
+	
+	&-header{
+		margin-bottom: 60px;
+	}
+}
+.news-link{
+	font-size: 14px;
+	color: #2b2d42;
+	border-bottom: 1px solid;
+}
+.news-item{
+	width: 288px;
+}
+.news-img{
+	height: 160px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-bottom: 15px;
+}
+.news-title{
+	color: #383a47;
+	font-size: 18px;
+	overflow: hidden;
+	line-height: 1.56;
+	margin-bottom: 15px;
+}
+.news-text{
+  font-size: 14px;
+  line-height: 1.71;
+  color: #abacba;
+}

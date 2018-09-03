@@ -1,0 +1,31 @@
+.text-block{
+	 background-color: #fcfcfc;
+	 padding: 60px 0;
+	 font-size: 14px;
+	 color: #abacba;
+	 line-height: 1.7;
+
+	 p{
+	 	+ p{
+	 		margin-top: 30px;
+	 	}
+	 }
+	 h4{
+		font-size: 18px;
+		color: #383a47;
+		font-family: $eb;
+		font-weight: 800;
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+}
+
+.text-item{
+	margin-bottom: 20px;
+}
+.read-more{
+	color: #abacba;
+	font-size: 14px;
+	font-weight: 500;
+	border-bottom: 1px solid;
+}
